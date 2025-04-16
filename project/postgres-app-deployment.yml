@@ -1,6 +1,3 @@
-
-
-
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -21,18 +18,14 @@ spec:
         name: postgres-app
     spec:
       containers:
-        - name: mydb
-	  image: postgres
+        - name: postgres-app
+          image: postgres
           env:
-	    - name: POSTGRES_PASSWORD
-	      value: intelliqit
-	    - name: POSTGRES_USER
-	      value: myuser
-	    - name: POSTGRES_DB
-	      value: mydb
-
-
-
-
-
+            - name: POSTGRES_PASSWORD
+              value: intelliqit
+            - name: POSTGRES_USER
+              value: myuser
+            - name: POSTGRES_DB
+              value: mydb
+...
 

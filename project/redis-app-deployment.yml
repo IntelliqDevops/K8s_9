@@ -1,7 +1,4 @@
 ---
-
-
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -21,8 +18,8 @@ spec:
         name: redis-app
     spec:
       containers:
-        - name: redis-app
-	  image: redis
+      - name: redis-app
+        image: redis
 
 
 
